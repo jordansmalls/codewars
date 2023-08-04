@@ -7,5 +7,7 @@ function reverseList(list) {
   return reversedList
 }
 
-const test1 = [1, 2, 3, 4]  //!  [4, 3, 2, 1] test passes
-const test2 = [9, 2, 0, 7]  //!  [7, 0, 2, 9] test passes
+const test1 = [1, 2, 3, 4]
+console.log(reverseList(test1)); //!  [4, 3, 2, 1] test passes
+const test2 = [9, 2, 0, 7]  
+console.log(reverseList(test2)); //!  [7, 0, 2, 9] test passes
