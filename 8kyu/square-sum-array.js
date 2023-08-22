@@ -12,7 +12,7 @@ function squareSum(numbers){
 
 
 // refactored solution --> preferred
-function squareSum2(numbers){
+function squareSum(numbers){
     return numbers.reduce((sum,num) => sum + (num * num), 0);
 };
 
