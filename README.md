@@ -8,7 +8,7 @@ Languages I use:  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScri
 <br/>I look forward to becoming familiar with many other languages and adding them to the list in the future!
 
 # Optimizations
-I love combing over and refactoring previous code; whether it's for efficiency, optimization or even simple readability.
+I love combing over and refactoring previous code; whether it's for efficiency, optimization or even readability.
 
 # Lessons Learned:
 By far the most important lesson I have learned while tackling these questions daily, is the fact that there is ALWAYS more to learn. Some of the most experienced developers get exposed to different ways to tackle problems everyday. It is okay not to know everything; it is important to use the resources you have to solve problems, and learning from your peers will only make you a stronger developer!
