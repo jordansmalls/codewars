@@ -7,7 +7,7 @@ Every single day I make sure to complete at least one Codewars challenge (kata).
 Languages I use:  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="20" height="20"/> </a>  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="20" height="20"/> </a>
 <br/>I look forward to becoming familiar with many other languages and adding them to the list in the future!
 
-# Optimizations
+# Optimizations:
 I love combing over and refactoring previous code; whether it's for efficiency, optimization or even readability.
 
 # Lessons Learned:
