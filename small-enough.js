@@ -6,7 +6,6 @@ const smallEnough = (a, limit) => {
     let solution = true;
     for(let i = 0; i < a.length; i++){
         if(a[i] <= limit){
-            solution = true
         }else{
           solution = false
         }
