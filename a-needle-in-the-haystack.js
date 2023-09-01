@@ -17,3 +17,7 @@ const findNeedle = haystack => {
       }
       return 'found the needle at position ' + pos
   }
+
+  // refactor
+  
+  const findNeedleAgain = haystack => 'found the needle at position ' + haystack.indexOf('needle')
