@@ -24,4 +24,4 @@ const quarterOf = m => {
 
 // refactored
 
-const quarterOf = month => Math.ceil(month / 3);
+const quarterOfAgain = month => Math.ceil(month / 3);
