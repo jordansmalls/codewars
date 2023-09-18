@@ -4,10 +4,13 @@
 
 // students code:
 
+/*
+
 function main [verb, noun]
   return verb + noun
 }
 
+*/
 
 // corrected
 
