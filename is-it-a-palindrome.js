@@ -11,3 +11,8 @@ const isPalindromeTwo = str => {
     let rev = str.split('').reverse().join('')
     return str == rev ? true : false
 }
+
+
+// done again for practice
+
+const isPalindromee = x => x.toUpperCase() === x.split('').reverse().join('').toUpperCase() ? true : false
