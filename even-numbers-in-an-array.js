@@ -18,3 +18,7 @@ const evenNumbers = (array, number) => {
 }
 
 // tests pass
+
+// alt solution
+
+const evenNumbersTwo = (array, number) => array.filter(item => item % 2 === 0).slice(-number);
