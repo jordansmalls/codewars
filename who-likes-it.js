@@ -8,7 +8,7 @@ Implement the function which takes an array containing the names of people that 
 ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 */
-const likesTwo = names => {
+const likes = names => {
     let L = names.length
     let res = [];
     if(L == 0){
