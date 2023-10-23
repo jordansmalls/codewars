@@ -32,3 +32,23 @@ const getSum = (a,b) => {
 // alternate solution
 
 const getSumTwo = (a, b) => (a + b) * (Math.abs(a - b) + 1) / 2;
+
+
+
+// practice a month later
+
+const getSumAgain = (a,b) => {
+  let sum = 0;
+  if(a == b){
+    return a
+  }else if(a < b){
+    for(let i = a; i<=b;i++){
+      sum += i
+    }
+  }else{
+    for(let i = b; i<=a;i++){
+      sum += i
+    }
+  }
+  return sum
+}
