@@ -12,3 +12,6 @@ function solve(arr) {
   };
 
   // tests pass
+
+  // refactored
+  const solve = arr => arr.reduce((acc,c)=> acc * new Set(c).size,1)
