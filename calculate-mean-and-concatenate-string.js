@@ -20,7 +20,7 @@ In C# and Java the mean return is a double.
 const mean = array => {
     let total = 0;
     let str = '';
-    for(let i = 0; i < array.length; i+=1){
+    for(let i = 0; i < 20; i+=1){
         let temp = parseInt(array[i]);
         if(!isNaN(temp))total += temp;
         else str += array[i];
