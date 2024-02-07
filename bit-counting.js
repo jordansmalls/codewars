@@ -25,6 +25,11 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 // more elegant, less effective
 const countBits = n => n.toString(2).split('1').length - 1;
 
+// alternate approach
+var countBitsAgain = function(n) {
+    return (n.toString(2).match(/1/g) || []).length;
+  };
+
 const x = 1234;
 console.log(countBits(x)) // 5
 // tests pass
