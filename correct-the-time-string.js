@@ -87,6 +87,16 @@ const timeCorrect = str => {
     return `${String(correctedHours).padStart(2, '0')}:${String(correctedMinutes).padStart(2, '0')}:${String(correctedSeconds).padStart(2, '0')}`;
 };
 
+// alternate solution 
+function timeCorrectAgain(str) {
+	const date = new Date(); 
+  if (str == '') return str;
+	if (!/^\d{2}\:\d{2}\:\d{2}$/g.test(str)) return null;
+  date.setUTCHours(...str.split(':'));
+  return date.toLocaleTimeString('en', {hour12: false});
+}
+
+
 const x = "09:10:01"; 
 const y = "11:70:10";
 const z = "19:99:99";
