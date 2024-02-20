@@ -43,6 +43,16 @@ const findMissingLetter = array => {
   return result;
 }
 
+
+
+// concise
+const findMissingLetterClever = array => {
+  var i = array[0].charCodeAt();
+  array.map(x => x.charCodeAt() == i ? i++ : i);
+  return String.fromCharCode(i);
+}
+
+
 const x = ['a','b','c','d','f'];
 const y = ['O','Q','R','S'];
 console.log(findMissingLetter(x)) // "e"
