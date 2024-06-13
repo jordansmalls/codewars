@@ -24,8 +24,5 @@ console.log(getCount('carson')) // 2
 console.log(getCount('bojack horseman')) // 5
 console.log(getCountAlt('bojack horseman')) // 5
 
-<<<<<<< HEAD
 // tests pass
-=======
 // tests pass
->>>>>>> d5323e1bf0dec98c5af9908acb89b6b490d5f2eb
