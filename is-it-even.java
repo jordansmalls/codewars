@@ -7,7 +7,7 @@ Numbers may be positive or negative, integers or floats.
 Floats with decimal part non equal to zero are considered UNeven for this kata.
 */
 
-public class Kata {
+public class Original {
     public static boolean isEven(double n) {
         // Check if the number is a float with a decimal part non equal to zero
         if (n % 1 != 0) {
@@ -26,4 +26,13 @@ public class Kata {
         System.out.println(isEven(-2));   // true
         System.out.println(isEven(-3.5)); // false
     }
+}
+
+
+
+// alt
+class Number {
+  static boolean isEven(double n) {
+    return n % 2 == 0;
+  }
 }
