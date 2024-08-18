@@ -10,15 +10,21 @@ spinWords( "This is a test") => returns "This is a test"
 spinWords( "This is another test" )=> returns "This is rehtona test"
 */
 
-const spinWords = str => {
-    let arr = str.split(' ')
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i].length >= 5){
-            arr[i] = arr[i].split('').reverse().join('')
-        }
-    }
-    return arr.join(' ')
-}
+// const spinWords = str => {
+//     let arr = str.split(' ')
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].length >= 5){
+//             arr[i] = arr[i].split('').reverse().join('')
+//         }
+//     }
+//     return arr.join(' ')
+// }
+
+// one line solution 
+const spinWords = string => string.split(" ").map(word => word.length >= 5 ? word.split("").reverse().join("") : word).join(" ");
+
+console.log(spinWords("Hey fellow warriors")) // "Hey wollef sroirraw" 
+console.log(spinWords("This is a test")) // "This is a test" 
+console.log(spinWords("This is another test")) // "This is rehtona test"
 
 // tests pass
-
