@@ -40,19 +40,31 @@ findMissingLetter
 // @params {array[]} array
 // @return {string}
 
-var findMissingLetter = function(array){
-    var temp = [];
-    var firstLetterCharCode = array[0].charCodeAt(0);
-    var lastLetterCharCode = array[array.length - 1].charCodeAt(0);
-    for(let curr = firstLetterCharCode; curr <= lastLetterCharCode; curr++){
-        temp.push(String.fromCharCode(curr));
-    }
-    for(let i = 0; i < temp.length; i++){
-        if(array[i] !== temp[i]){
-            return temp[i];
+// var findMissingLetter = function(array){
+//     var temp = [];
+//     var firstLetterCharCode = array[0].charCodeAt(0);
+//     var lastLetterCharCode = array[array.length - 1].charCodeAt(0);
+//     for(let curr = firstLetterCharCode; curr <= lastLetterCharCode; curr++){
+//         temp.push(String.fromCharCode(curr));
+//     }
+//     for(let i = 0; i < temp.length; i++){
+//         if(array[i] !== temp[i]){
+//             return temp[i];
+//         };
+//     };
+// };
+
+// condensed
+var findMissingLetter = arr => {
+    var first = arr[0].charCodeAt(0);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].charCodeAt(0) !== first + i) {
+            return String.fromCharCode(first + i);
         };
     };
 };
+
+// time complexity- O(n)
 
 
 
