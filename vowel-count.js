@@ -28,3 +28,17 @@ const getCount = (str) => {
     }
     return vc
   };
+
+
+
+  const getCountAgain = string => {
+    var count = 0;
+    for(let curr = 0; curr < string.length; curr++){
+      if('aeiou'.includes(string[curr])){
+        count++;
+      };
+    };
+    return count;
+  };
+
+  console.log(getCountAgain("aeiou")) // 5
