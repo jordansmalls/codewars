@@ -27,3 +27,15 @@ const multiTable = n => {
     return table;
   }
 
+
+
+function multiTableAgain(num){
+  let string = "";
+  for(let curr = 1; curr <= 10; curr++){
+    string += `${curr} * ${num} = ${curr * num}`
+    if(curr < 10){
+      string += "\n"
+    };
+  };
+  return string
+}
