@@ -8,3 +8,15 @@
 
 const arrayDiff =(a,b)=>a.filter(e => !b.includes(e));
   
+
+// ONE LINE SOLUTION
+const arrayDiffAgain = (a, b) => a.reduce((acc, value) => !b.includes(value) ? [...acc, value] : acc, []);
+
+
+console.log(arrayDiff([1,2],[1])) // [2]
+console.log(arrayDiffAgain([1,2],[1])) // [2]
+console.log(arrayDiff([1,2,2,2,3], [2])) // [1,3]
+console.log(arrayDiffAgain([1,2,2,2,3], [2])) // [1,3]
+
+
+// ALL TESTS PASS
