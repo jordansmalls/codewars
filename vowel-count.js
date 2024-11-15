@@ -5,6 +5,8 @@
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 
 // The input string will only consist of lower case letters and/or spaces.
+
+/*
 const getCount = (str) => {
     let vc = 0;
     let strArr = [];
@@ -28,17 +30,48 @@ const getCount = (str) => {
     }
     return vc
   };
+*/
 
+  // const getCountAgain = string => {
+  //   var count = 0;
+  //   for(let curr = 0; curr < string.length; curr++){
+  //     if('aeiou'.includes(string[curr])){
+  //       count++;
+  //     };
+  //   };
+  //   return count;
+  // };
 
+  /**
+   * @param {string} string
+   * @return {number}
+   */
 
-  const getCountAgain = string => {
-    var count = 0;
+  const getCount = string => {
+    string = string.toLowerCase();
+    let vowels = new Set(["a","e","i","o","u"]);
+    let count = 0;
     for(let curr = 0; curr < string.length; curr++){
-      if('aeiou'.includes(string[curr])){
-        count++;
+      if(vowels.has(string[curr])){
+        count += 1;
       };
     };
     return count;
   };
 
-  console.log(getCountAgain("aeiou")) // 5
+//   const getCount = string => {
+//     string = string.toLowerCase();
+//     const vowels = new Set(["a", "e", "i", "o", "u"]);
+//     let totalVowels = 0;
+
+//     for (let curr = 0; curr < string.length; curr += 1) {
+//         if (vowels.has(string[curr])) {
+//             totalVowels += 1;
+//         }
+//     }
+
+//     return totalVowels;
+// };
+
+
+  console.log(getCount("aeiou")) // 5
