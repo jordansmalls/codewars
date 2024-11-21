@@ -33,6 +33,7 @@ function firstMissingLetter(string: string): string | undefined {
 
 
 // optimized for better space efficiency --> not storing key value pairs ~ 1/2 saved
+// could save more without temp array
 function firstMissingLetter(string: string): string {
     let alphabet: Set<string> = new Set("abcdefghijklmnopqrstuvwxyz");
     for(const letter of string) {
