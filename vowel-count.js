@@ -59,19 +59,4 @@ const getCount = (str) => {
     return count;
   };
 
-//   const getCount = string => {
-//     string = string.toLowerCase();
-//     const vowels = new Set(["a", "e", "i", "o", "u"]);
-//     let totalVowels = 0;
-
-//     for (let curr = 0; curr < string.length; curr += 1) {
-//         if (vowels.has(string[curr])) {
-//             totalVowels += 1;
-//         }
-//     }
-
-//     return totalVowels;
-// };
-
-
   console.log(getCount("aeiou")) // 5
