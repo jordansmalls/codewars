@@ -16,16 +16,35 @@
     // if the lengths are not the same --> return true (there is a duplicate)
 
 
-class Solution {
-    /**
-      * @param {number[]} nums
-      * @returns {boolean}
-    */
-   hasDuplicate(nums) {
-        let set = new Set();
-        for(const num of nums) {
-            set.add(num);
-        };
-        return set.size == nums.length == false ? true : false;
-   };
-};
+// class Solution {
+//     /**
+//       * @param {number[]} nums
+//       * @returns {boolean}
+//     */
+//    hasDuplicate(nums) {
+//         let set = new Set();
+//         for(const num of nums) {
+//             set.add(num);
+//         };
+//         return set.size == nums.length == false ? true : false;
+//    };
+// };
+
+
+
+
+// const containsDuplicate = nums => {
+//     const map = new Map();
+//     for(const idx of nums) {
+//         if(map.has(idx)) {
+//             return true;
+//         } else {
+//             map.set(idx, true);
+//         };
+//     };
+//     return false;
+// };
+
+
+// adjusted to align with leetcode -- shorthand solution slightly more efficient in js?
+const hasDuplicate = nums => new Set(nums).size === nums.length ? false : true;
