@@ -24,17 +24,23 @@
 // instantiate 2 vars, left and right pointers
 // if pointers to do not point to the same value, return false (not a palindrome)
 
-const isPalindrome = str => {
-    str = str.toLowerCase();
-    var left = 0;
-    var right = str.length - 1;
-    while(left < right){
-        if(str[left] !== str[right]) return false;
-        left++;
-        right--;
-    };
-    return true;
-};
+// const isPalindrome = str => {
+//     str = str.toLowerCase();
+//     var left = 0;
+//     var right = str.length - 1;
+//     while(left < right){
+//         if(str[left] !== str[right]) return false;
+//         left++;
+//         right--;
+//     };
+//     return true;
+// };
 
 // time complexity O(n)
 // space complexity O(n)
+
+
+const isPalindrome = x => x.toLowerCase().split("").reverse().join("") === x.toLowerCase();
+
+console.log(isPalindrome("racecar"))
+console.log(isPalindrome("madam"))
