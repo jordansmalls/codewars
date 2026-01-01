@@ -66,3 +66,22 @@ console.log(isPalindrome(" ")) // true
 console.log(isPalindrome("A man, a plan, a canal: Panama")) // true
 
 // tests pass
+
+
+// refactor + prac
+
+const valPalindrome = function(string) {
+    string = string.toLowerCase().replace(/[^a-z0-9]/g,'')
+    let left = 0
+    let right = string.length - 1
+    while(left < right) {
+        if(string[left] !== string[right]) {
+            return false;
+        }
+        left++
+        right--
+    }
+    return true
+}
+
+console.log(valPalindrome("A man, a plan, a canal: Panama")) // true
