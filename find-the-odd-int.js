@@ -12,10 +12,22 @@ Examples
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 */
 
-const findOdd = a => a.find((number) => a.filter((n) => number === n).length % 2)
+// const findOdd = a => a.find((number) => a.filter((n) => number === n).length % 2)
 
 // test cases pass
 
 // wow
 
-const findOddTwo = (xs) => xs.reduce((a, b) => a ^ b);
+// const findOddTwo = (xs) => xs.reduce((a, b) => a ^ b);
+
+
+const findOdd = function(A) {
+    const map = new Map();
+    for(const idx of A) {
+        map.set(idx, (map.get(idx) || 0) + 1);
+    };
+
+    for(const [key, values] of map) {
+        if(value % 2 !== 0) return key;
+    };
+};
