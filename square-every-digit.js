@@ -7,11 +7,14 @@
 
 
 
-const squareDigits = num => {
-    let string = num.toString();
-    let res = [];
-    for(let i = 0; i < string.length; i++){
-        res[i] = string[i] * string[i];
-    }
-    return Number(res.join(''));
-};
+// const squareDigits = num => {
+//     let string = num.toString();
+//     let res = [];
+//     for(let i = 0; i < string.length; i++){
+//         res[i] = string[i] * string[i];
+//     }
+//     return Number(res.join(''));
+// };
+
+
+const squareDigits = num => Number(num.toString().split("").map((idx) => (Number(idx**2)).toString()).join(""))
