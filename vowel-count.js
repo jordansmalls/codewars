@@ -47,16 +47,25 @@ const getCount = (str) => {
    * @return {number}
    */
 
-  const getCount = string => {
-    string = string.toLowerCase();
-    let vowels = new Set(["a","e","i","o","u"]);
-    let count = 0;
-    for(let curr = 0; curr < string.length; curr++){
-      if(vowels.has(string[curr])){
-        count += 1;
-      };
+  // const getCount = string => {
+  //   string = string.toLowerCase();
+  //   let vowels = new Set(["a","e","i","o","u"]);
+  //   let count = 0;
+  //   for(let curr = 0; curr < string.length; curr++){
+  //     if(vowels.has(string[curr])){
+  //       count += 1;
+  //     };
+  //   };
+  //   return count;
+  // };
+
+  const getCount = s => {
+    const vowels = "aeiou";
+    let sum = 0;
+    for(const c of s) {
+      if(vowels.includes(c)) sum += 1;
     };
-    return count;
-  };
+    return sum;
+  }
 
   console.log(getCount("aeiou")) // 5
